@@ -1,32 +1,48 @@
-const first= document.getElementById('first');
-const last=document.getElementById('last');
-const age=document.getElementById('age');
-const mes=document.getElementById('mes');
-const btn =document.getElementById('btn');
-const newbtn =document.getElementById('nbtn');
+
+const firstName = document.getElementById('firstName');
+const lastName = document.getElementById('lastName');
+const age = document.getElementById('age');
+const message = document.getElementById('message');
+
 class Person {
-    constructor(){
-        this.firstName = first.value;
-        this.lastName =last.value;
-        this.age=age.value;
+    constructor (firstName, lastName, age) {
+        this.firstName = firstName; 
+        this.lastName = lastName;
+        this.age = age; 
     }
 }
 
-const func = ()=>{
-    document.body.style.background ='bisque';
-   const Person1 = new Person();
-   console.log(Person1);
-   let str=(`Hello,${Person1.firstName} ${Person1.lastName}. You are ${Person1.age} years old.`);
-   mes.innerHTML=str;
-   
+let button = document.querySelector('button'); 
+
+
+function submitButton(){
+    document.body.style.backgroundColor = 'bisque';
+    const newUser = new Person (firstName.value,lastName.value, age.value);
+    console.log(newUser);
+    console.log( `Hello, ${newUser.firstName} ${newUser.lastName} ${newUser.age} `);
+    message.innerHTML = `Hello, ${newUser.firstName} ${newUser.lastName} ${newUser.age} `;
 }
 
-btn.addEventListener('click',func);
-newbtn.addEventListener('click',()=>{
-    document.body.style.backgroundColor='rebeccapurple';
-    first.value='';
-    last.value='';
-    age.value='';
-    mes.innerHTML='';
+button.addEventListener('click', submitButton);
 
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
