@@ -22,7 +22,7 @@ const func = ()=>{
 }
 
 btn.addEventListener('click',func);
-refreshbtn.addEventListener('click',()=>{
+newbtn.addEventListener('click',()=>{
     document.body.style.backgroundColor='rebeccapurple';
     first.value='';
     last.value='';
