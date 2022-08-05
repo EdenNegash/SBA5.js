@@ -10,7 +10,7 @@ div{
     justify-content: center;
    
 }
-#out{
+#mes{
     display:block;
     background-color: lightgreen;
     height:200px;
@@ -19,14 +19,14 @@ div{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: large;
 }
-#btn{
+#nbtn{
     height: 50px;
     width: 75px;
 }
 #form{
     font-size:30PX;
 }
-#rbtn{
+#btn{
     height: 50px;
     width: 75px;
 }
